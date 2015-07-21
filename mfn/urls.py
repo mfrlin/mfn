@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from weather.views import simple_chart
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^weather/', include('weather.urls')),
+    url('^$', simple_chart, name='index'),
 ]
