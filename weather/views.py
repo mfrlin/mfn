@@ -10,4 +10,4 @@ def simple_chart(request):
 
 	script, div = components(plot, CDN)
 
-	return render(request, 'simple_chart.html', {'the_script': script, 'the_div': div})
+	return render(request, 'weather/simple_chart.html', {'the_script': script, 'the_div': div})
