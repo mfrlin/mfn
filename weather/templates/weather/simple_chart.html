@@ -1,10 +1,11 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Experiment with Bokeh</title>
-    <script src="https://cdn.pydata.org/bokeh/release/bokeh-0.9.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.9.1.min.css">
+    <script src="{% static  "js/bokeh-0.9.1.min.js" %}"></script>
+    <link rel="stylesheet" href="{% static  "css/bokeh-0.9.1.min.css" %}">
 </head>
 <body>
 
