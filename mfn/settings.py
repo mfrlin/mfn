@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'mfn.wsgi.application'
 import dj_database_url
 
 DATABASES = {}
-DATABASES['default'] = dj_database_url.config()
+DATABASES['default'] = dj_database_url.config(default='postgres://martin:pikolo@localhost:5432/weather')
 
 
 # Internationalization
